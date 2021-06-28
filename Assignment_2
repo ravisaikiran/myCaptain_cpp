@@ -1,0 +1,12 @@
+#include <bits/stdc++.h>
+#include<cstdio>
+using namespace std;
+int main()
+{
+    float a,b,c;
+    cin>>a>>b;
+    c=a*b;
+    printf("%.1f",c);
+    //cout<<setprecision(2)<<c;
+    return 0;
+}
