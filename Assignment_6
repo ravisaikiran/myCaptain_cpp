@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    class Myclass{
+        public:
+        int hrs;
+        int min;
+        int sec;
+        int totalTime_sec;
+    };
+    Myclass obj1;
+    cout<<"Enter time:\n";
+    cout<<"Enter hours:";
+    cin>>obj1.hrs;
+    cout<<"Enter minutes:";
+    cin>>obj1.min;
+    cout<<"Enter seconds:";
+    cin>>obj1.sec;
+    obj1.totalTime_sec=(obj1.hrs*60*60)+(obj1.min*60)+obj1.sec;
+    cout<<"The time is(Hr:Min:Sec) "<<obj1.hrs<<":"<<obj1.min<<":"<<obj1.sec<<"\n";
+    cout<<"Total time in seconds:"<<obj1.totalTime_sec;
+    return 0;
+}
